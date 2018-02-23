@@ -1,6 +1,7 @@
 from DbMeta import DbMeta 
 class Db(metaclass=DbMeta):
     def show(self):
+        print('----- Db.show(self) -----')
         print(dir(self))
         print(self.__secret)
         print(self._Db__secret)
